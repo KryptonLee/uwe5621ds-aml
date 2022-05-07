@@ -1,0 +1,12 @@
+config SPARD_WLAN_SUPPORT
+	bool "Unisoc wireless Support"
+	select AML_WIFI_DEVICE_UWE5621  if SPARD_WLAN_SUPPORT
+	default n
+	help
+	  This is support for spreadtrum wireless chip.
+
+if SPARD_WLAN_SUPPORT
+source "drivers/net/wireless/uwe5622/unisocwcn/Kconfig"
+source "drivers/net/wireless/uwe5622/unisocwifi/Kconfig"
+source "drivers/net/wireless/uwe5622/tty-sdio/Kconfig"
+endif
