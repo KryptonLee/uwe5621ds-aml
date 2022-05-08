@@ -11,3 +11,6 @@ export UNISOC_FW_PATH_CONFIG
 
 UNISOC_WIFI_CUS_CONFIG := "/lib/firmware/uwe5621ds/"
 export UNISOC_WIFI_CUS_CONFIG
+
+UNISOC_WIFI_MAC_FILE := "/lib/firmware/uwe5621ds/wifimac.txt"
+export UNISOC_WIFI_MAC_FILE
