@@ -104,9 +104,9 @@ int tp_tx_buf_cnt = TP_TX_BUF_CNT;
 int tp_tx_buf_len = TP_TX_BUF_LEN;
 int rx_pop_cnt;
 #ifdef CONFIG_SPRD_DEBUG
-long int sdiohal_log_level = SDIOHAL_NORMAL_LEVEL;
+long int sdiohal_log_level = SDIOHAL_NORMAL_LEVEL | SDIOHAL_DEBUG_LEVEL;
 #else
-long int sdiohal_log_level;
+long int sdiohal_log_level = SDIOHAL_NORMAL_LEVEL | SDIOHAL_DEBUG_LEVEL;
 #endif
 
 #if TCP_TEST_RX

@@ -14,3 +14,5 @@ export UNISOC_WIFI_CUS_CONFIG
 
 UNISOC_WIFI_MAC_FILE := "/lib/firmware/uwe5621ds/wifimac.txt"
 export UNISOC_WIFI_MAC_FILE
+
+export DEBUGMODE=y

@@ -29,7 +29,7 @@
 #define sdiohal_info(fmt, args...) \
 	pr_info("sdiohal:" fmt, ## args)
 #define sdiohal_err(fmt, args...) \
-	pr_err("sdiohal err:" fmt, ## args)
+	pr_info("sdiohal err:" fmt, ## args)
 
 #ifdef CONFIG_DEBUG_FS
 extern long int sdiohal_log_level;

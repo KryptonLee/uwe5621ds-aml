@@ -230,6 +230,7 @@ ccflags-y += -DCONFIG_SDIO_INBAND_INT
 #ccflags-y += -DCONFIG_SDIO_INBAND_POLLING
 ccflags-y += -DCONFIG_SDIO_BLKSIZE_512
 #ccflags-y += -DCONFIG_SDIO_PWRSEQ
+ccflags-y += -DONFIG_DEBUG_FS
 
 driver_dependencies += $(firmware_target)
 endif
